@@ -1,117 +1,99 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+import Sidebar from '../components/Sidebar';
+import Topbar from '../components/Topbar';
+import StoryCard from '../components/StoryCard';
+import FilterBar from '../components/FilterBar';
+ import img1 from "../public/img1.jpg";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
+
+const dummyData = [
+  {
+    title: "How 7 lines of code turned into $36B Empire",
+    category: "Business",
+    date: "20Sep2022",
+    status: "Published",
+    views: 428,
+    imageUrl: "/img1.jpg"
+  },
+  {
+    title: "How 7 lines of code turned into $36B Empire",
+    category: "Business",
+    date: "20Sep2022",
+    status: "Published",
+    views: 428,
+    imageUrl: "https://s3-alpha-sig.figma.com/img/d146/1468/65a8273af2cbbc88616b1353aee1e51d?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QD7qig1FF7pP4DoZ86jfut-enRWkeqE14au-x1iW36f4FP~rHbPe84Tp4WzaF1MuG0~GUU6pQ4QOFJ4dXVwZMMi9imAPJKJ9p1teHrRrs6agfxAJxVvFp0sdWbyjh2V3QhOXswuVfGuXFSmDFmO10NP4PDBu2uEaUJp4aDPeVpmM5EAhsvzA8JJIlq9NYeNxr4wpBXmqwaxTksP51CSvvmyk3COvZCegsv9eGKOHfAD9H187FY3wRL1zC-lqevQnjNJNn9W0gabsbKjuByUdXwkSspTO6SNYAt2ZhewhzwZ2M~Q5v~NVu-KLY91SM2Ovmm53ZnhnCMdGQe~9Ki6b6A__"
+  },
+  {
+    title: "How 7 lines of code turned into $36B Empire",
+    category: "Business",
+    date: "20Sep2022",
+    status: "Published",
+    views: 428,
+    imageUrl: "https://s3-alpha-sig.figma.com/img/d146/1468/65a8273af2cbbc88616b1353aee1e51d?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QD7qig1FF7pP4DoZ86jfut-enRWkeqE14au-x1iW36f4FP~rHbPe84Tp4WzaF1MuG0~GUU6pQ4QOFJ4dXVwZMMi9imAPJKJ9p1teHrRrs6agfxAJxVvFp0sdWbyjh2V3QhOXswuVfGuXFSmDFmO10NP4PDBu2uEaUJp4aDPeVpmM5EAhsvzA8JJIlq9NYeNxr4wpBXmqwaxTksP51CSvvmyk3COvZCegsv9eGKOHfAD9H187FY3wRL1zC-lqevQnjNJNn9W0gabsbKjuByUdXwkSspTO6SNYAt2ZhewhzwZ2M~Q5v~NVu-KLY91SM2Ovmm53ZnhnCMdGQe~9Ki6b6A__"
+  },
+  {
+    title: "How 7 lines of code turned into $36B Empire",
+    category: "Business",
+    date: "20Sep2022",
+    status: "Published",
+    views: 428,
+    imageUrl: "https://s3-alpha-sig.figma.com/img/d146/1468/65a8273af2cbbc88616b1353aee1e51d?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QD7qig1FF7pP4DoZ86jfut-enRWkeqE14au-x1iW36f4FP~rHbPe84Tp4WzaF1MuG0~GUU6pQ4QOFJ4dXVwZMMi9imAPJKJ9p1teHrRrs6agfxAJxVvFp0sdWbyjh2V3QhOXswuVfGuXFSmDFmO10NP4PDBu2uEaUJp4aDPeVpmM5EAhsvzA8JJIlq9NYeNxr4wpBXmqwaxTksP51CSvvmyk3COvZCegsv9eGKOHfAD9H187FY3wRL1zC-lqevQnjNJNn9W0gabsbKjuByUdXwkSspTO6SNYAt2ZhewhzwZ2M~Q5v~NVu-KLY91SM2Ovmm53ZnhnCMdGQe~9Ki6b6A__"
+  },
+  {
+    title: "How 7 lines of code turned into $36B Empire",
+    category: "Business",
+    date: "20Sep2022",
+    status: "Published",
+    views: 428,
+    imageUrl: "https://s3-alpha-sig.figma.com/img/d146/1468/65a8273af2cbbc88616b1353aee1e51d?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QD7qig1FF7pP4DoZ86jfut-enRWkeqE14au-x1iW36f4FP~rHbPe84Tp4WzaF1MuG0~GUU6pQ4QOFJ4dXVwZMMi9imAPJKJ9p1teHrRrs6agfxAJxVvFp0sdWbyjh2V3QhOXswuVfGuXFSmDFmO10NP4PDBu2uEaUJp4aDPeVpmM5EAhsvzA8JJIlq9NYeNxr4wpBXmqwaxTksP51CSvvmyk3COvZCegsv9eGKOHfAD9H187FY3wRL1zC-lqevQnjNJNn9W0gabsbKjuByUdXwkSspTO6SNYAt2ZhewhzwZ2M~Q5v~NVu-KLY91SM2Ovmm53ZnhnCMdGQe~9Ki6b6A__"
+  },
+  {
+    title: "How 7 lines of code turned into $36B Empire",
+    category: "Business",
+    date: "20Sep2022",
+    status: "Published",
+    views: 428,
+    imageUrl: "https://s3-alpha-sig.figma.com/img/d146/1468/65a8273af2cbbc88616b1353aee1e51d?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QD7qig1FF7pP4DoZ86jfut-enRWkeqE14au-x1iW36f4FP~rHbPe84Tp4WzaF1MuG0~GUU6pQ4QOFJ4dXVwZMMi9imAPJKJ9p1teHrRrs6agfxAJxVvFp0sdWbyjh2V3QhOXswuVfGuXFSmDFmO10NP4PDBu2uEaUJp4aDPeVpmM5EAhsvzA8JJIlq9NYeNxr4wpBXmqwaxTksP51CSvvmyk3COvZCegsv9eGKOHfAD9H187FY3wRL1zC-lqevQnjNJNn9W0gabsbKjuByUdXwkSspTO6SNYAt2ZhewhzwZ2M~Q5v~NVu-KLY91SM2Ovmm53ZnhnCMdGQe~9Ki6b6A__"
+  },
+  {
+    title: "How 7 lines of code turned into $36B Empire",
+    category: "Business",
+    date: "20Sep2022",
+    status: "Published",
+    views: 428,
+    imageUrl: "https://s3-alpha-sig.figma.com/img/d146/1468/65a8273af2cbbc88616b1353aee1e51d?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QD7qig1FF7pP4DoZ86jfut-enRWkeqE14au-x1iW36f4FP~rHbPe84Tp4WzaF1MuG0~GUU6pQ4QOFJ4dXVwZMMi9imAPJKJ9p1teHrRrs6agfxAJxVvFp0sdWbyjh2V3QhOXswuVfGuXFSmDFmO10NP4PDBu2uEaUJp4aDPeVpmM5EAhsvzA8JJIlq9NYeNxr4wpBXmqwaxTksP51CSvvmyk3COvZCegsv9eGKOHfAD9H187FY3wRL1zC-lqevQnjNJNn9W0gabsbKjuByUdXwkSspTO6SNYAt2ZhewhzwZ2M~Q5v~NVu-KLY91SM2Ovmm53ZnhnCMdGQe~9Ki6b6A__"
+  },
+  {
+    title: "How 7 lines of code turned into $36B Empire",
+    category: "Business",
+    date: "20Sep2022",
+    status: "Published",
+    views: 428,
+    imageUrl: "https://s3-alpha-sig.figma.com/img/d146/1468/65a8273af2cbbc88616b1353aee1e51d?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QD7qig1FF7pP4DoZ86jfut-enRWkeqE14au-x1iW36f4FP~rHbPe84Tp4WzaF1MuG0~GUU6pQ4QOFJ4dXVwZMMi9imAPJKJ9p1teHrRrs6agfxAJxVvFp0sdWbyjh2V3QhOXswuVfGuXFSmDFmO10NP4PDBu2uEaUJp4aDPeVpmM5EAhsvzA8JJIlq9NYeNxr4wpBXmqwaxTksP51CSvvmyk3COvZCegsv9eGKOHfAD9H187FY3wRL1zC-lqevQnjNJNn9W0gabsbKjuByUdXwkSspTO6SNYAt2ZhewhzwZ2M~Q5v~NVu-KLY91SM2Ovmm53ZnhnCMdGQe~9Ki6b6A__"
+  },
+];
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Create Next App</title>
-        <meta name="description" content="Generated by create next app" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <div
-        className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
-      >
-        <main className={styles.main}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js logo"
-            width={180}
-            height={38}
-            priority
-          />
-          <ol>
-            <li>
-              Get started by editing <code>pages/index.js</code>.
-            </li>
-            <li>Save and see your changes instantly.</li>
-          </ol>
+    <div style={{ display: 'flex' }}>
+      <Sidebar />
+      <main style={{ 
+  marginLeft: '250px', 
+  padding: '20px', 
+  width: '100%', 
+  paddingTop: '112px'  // 92px topbar + 20px gap
+}}>
+  <Topbar />
+  <FilterBar />
+  <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+    {dummyData.map((story, index) => (
+      <StoryCard key={index} {...story}  />
+    ))}
+  </div>
+ 
+</main>
 
-          <div className={styles.ctas}>
-            <a
-              className={styles.primary}
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className={styles.logo}
-                src="/vercel.svg"
-                alt="Vercel logomark"
-                width={20}
-                height={20}
-              />
-              Deploy now
-            </a>
-            <a
-              href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.secondary}
-            >
-              Read our docs
-            </a>
-          </div>
-        </main>
-        <footer className={styles.footer}>
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/file.svg"
-              alt="File icon"
-              width={16}
-              height={16}
-            />
-            Learn
-          </a>
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/window.svg"
-              alt="Window icon"
-              width={16}
-              height={16}
-            />
-            Examples
-          </a>
-          <a
-            href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/globe.svg"
-              alt="Globe icon"
-              width={16}
-              height={16}
-            />
-            Go to nextjs.org →
-          </a>
-        </footer>
-      </div>
-    </>
+    </div>
   );
 }

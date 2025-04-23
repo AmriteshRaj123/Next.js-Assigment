@@ -1,0 +1,119 @@
+.topbar {
+    height: 92px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    position: fixed;
+    top: 0;
+    left: 250px; /* sidebar width */
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(182, 182, 182, 0.1);
+  }
+  
+  /* Left: Back arrow + heading */
+  .titleSection {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .titleSection h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .backArrow {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Tabs row (below heading - optional) */
+  .tabs {
+    margin: 100px 0 15px 0; /* leave space below fixed topbar */
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .tabs button {
+    font-size: 14px;
+    padding: 6px 14px;
+    border-radius: 9999px;
+    font-weight: 500;
+    border: none;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .tabs .active {
+    background-color: #4f46e5;
+    color: white;
+  }
+  
+  /* Actions (Search, Filter, Add button) */
+  .actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .actions input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .actions button {
+    padding: 8px 12px;
+    background: #f9fafb;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .addStory {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+  }
+  
+  /* Profile Section */
+  .profileBox {
+    background-color: #f9f5ff;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 14px;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  .avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profileText p {
+    font-size: 12px;
+    margin: 0;
+    color: #555;
+  }
+  
+  .profileText strong {
+    font-size: 14px;
+    color: #111;
+  }
+  
+  .downArrow {
+    font-size: 14px;
+  }
+  
