@@ -14,7 +14,7 @@ const dummyData = [
     date: "20Sep2022",
     status: "Published",
     views: 428,
-    imageUrl: "/img1.jpg"
+    imageUrl: "/img3.jpg"
   },
   {
     title: "How 7 lines of code turned into $36B Empire",
@@ -22,7 +22,7 @@ const dummyData = [
     date: "20Sep2022",
     status: "Published",
     views: 428,
-    imageUrl: "https://s3-alpha-sig.figma.com/img/d146/1468/65a8273af2cbbc88616b1353aee1e51d?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QD7qig1FF7pP4DoZ86jfut-enRWkeqE14au-x1iW36f4FP~rHbPe84Tp4WzaF1MuG0~GUU6pQ4QOFJ4dXVwZMMi9imAPJKJ9p1teHrRrs6agfxAJxVvFp0sdWbyjh2V3QhOXswuVfGuXFSmDFmO10NP4PDBu2uEaUJp4aDPeVpmM5EAhsvzA8JJIlq9NYeNxr4wpBXmqwaxTksP51CSvvmyk3COvZCegsv9eGKOHfAD9H187FY3wRL1zC-lqevQnjNJNn9W0gabsbKjuByUdXwkSspTO6SNYAt2ZhewhzwZ2M~Q5v~NVu-KLY91SM2Ovmm53ZnhnCMdGQe~9Ki6b6A__"
+    imageUrl: "/img5.jpg"
   },
   {
     title: "How 7 lines of code turned into $36B Empire",
@@ -30,7 +30,7 @@ const dummyData = [
     date: "20Sep2022",
     status: "Published",
     views: 428,
-    imageUrl: "https://s3-alpha-sig.figma.com/img/d146/1468/65a8273af2cbbc88616b1353aee1e51d?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QD7qig1FF7pP4DoZ86jfut-enRWkeqE14au-x1iW36f4FP~rHbPe84Tp4WzaF1MuG0~GUU6pQ4QOFJ4dXVwZMMi9imAPJKJ9p1teHrRrs6agfxAJxVvFp0sdWbyjh2V3QhOXswuVfGuXFSmDFmO10NP4PDBu2uEaUJp4aDPeVpmM5EAhsvzA8JJIlq9NYeNxr4wpBXmqwaxTksP51CSvvmyk3COvZCegsv9eGKOHfAD9H187FY3wRL1zC-lqevQnjNJNn9W0gabsbKjuByUdXwkSspTO6SNYAt2ZhewhzwZ2M~Q5v~NVu-KLY91SM2Ovmm53ZnhnCMdGQe~9Ki6b6A__"
+    imageUrl: "/img3.jpg"
   },
   {
     title: "How 7 lines of code turned into $36B Empire",
@@ -38,7 +38,7 @@ const dummyData = [
     date: "20Sep2022",
     status: "Published",
     views: 428,
-    imageUrl: "https://s3-alpha-sig.figma.com/img/d146/1468/65a8273af2cbbc88616b1353aee1e51d?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QD7qig1FF7pP4DoZ86jfut-enRWkeqE14au-x1iW36f4FP~rHbPe84Tp4WzaF1MuG0~GUU6pQ4QOFJ4dXVwZMMi9imAPJKJ9p1teHrRrs6agfxAJxVvFp0sdWbyjh2V3QhOXswuVfGuXFSmDFmO10NP4PDBu2uEaUJp4aDPeVpmM5EAhsvzA8JJIlq9NYeNxr4wpBXmqwaxTksP51CSvvmyk3COvZCegsv9eGKOHfAD9H187FY3wRL1zC-lqevQnjNJNn9W0gabsbKjuByUdXwkSspTO6SNYAt2ZhewhzwZ2M~Q5v~NVu-KLY91SM2Ovmm53ZnhnCMdGQe~9Ki6b6A__"
+    imageUrl: "/img5.jpg"
   },
   {
     title: "How 7 lines of code turned into $36B Empire",
@@ -46,7 +46,7 @@ const dummyData = [
     date: "20Sep2022",
     status: "Published",
     views: 428,
-    imageUrl: "https://s3-alpha-sig.figma.com/img/d146/1468/65a8273af2cbbc88616b1353aee1e51d?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QD7qig1FF7pP4DoZ86jfut-enRWkeqE14au-x1iW36f4FP~rHbPe84Tp4WzaF1MuG0~GUU6pQ4QOFJ4dXVwZMMi9imAPJKJ9p1teHrRrs6agfxAJxVvFp0sdWbyjh2V3QhOXswuVfGuXFSmDFmO10NP4PDBu2uEaUJp4aDPeVpmM5EAhsvzA8JJIlq9NYeNxr4wpBXmqwaxTksP51CSvvmyk3COvZCegsv9eGKOHfAD9H187FY3wRL1zC-lqevQnjNJNn9W0gabsbKjuByUdXwkSspTO6SNYAt2ZhewhzwZ2M~Q5v~NVu-KLY91SM2Ovmm53ZnhnCMdGQe~9Ki6b6A__"
+    imageUrl: "/img5.jpg"
   },
   {
     title: "How 7 lines of code turned into $36B Empire",
@@ -54,7 +54,7 @@ const dummyData = [
     date: "20Sep2022",
     status: "Published",
     views: 428,
-    imageUrl: "https://s3-alpha-sig.figma.com/img/d146/1468/65a8273af2cbbc88616b1353aee1e51d?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QD7qig1FF7pP4DoZ86jfut-enRWkeqE14au-x1iW36f4FP~rHbPe84Tp4WzaF1MuG0~GUU6pQ4QOFJ4dXVwZMMi9imAPJKJ9p1teHrRrs6agfxAJxVvFp0sdWbyjh2V3QhOXswuVfGuXFSmDFmO10NP4PDBu2uEaUJp4aDPeVpmM5EAhsvzA8JJIlq9NYeNxr4wpBXmqwaxTksP51CSvvmyk3COvZCegsv9eGKOHfAD9H187FY3wRL1zC-lqevQnjNJNn9W0gabsbKjuByUdXwkSspTO6SNYAt2ZhewhzwZ2M~Q5v~NVu-KLY91SM2Ovmm53ZnhnCMdGQe~9Ki6b6A__"
+    imageUrl: "/img3.jpg"
   },
   {
     title: "How 7 lines of code turned into $36B Empire",
@@ -62,7 +62,7 @@ const dummyData = [
     date: "20Sep2022",
     status: "Published",
     views: 428,
-    imageUrl: "https://s3-alpha-sig.figma.com/img/d146/1468/65a8273af2cbbc88616b1353aee1e51d?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QD7qig1FF7pP4DoZ86jfut-enRWkeqE14au-x1iW36f4FP~rHbPe84Tp4WzaF1MuG0~GUU6pQ4QOFJ4dXVwZMMi9imAPJKJ9p1teHrRrs6agfxAJxVvFp0sdWbyjh2V3QhOXswuVfGuXFSmDFmO10NP4PDBu2uEaUJp4aDPeVpmM5EAhsvzA8JJIlq9NYeNxr4wpBXmqwaxTksP51CSvvmyk3COvZCegsv9eGKOHfAD9H187FY3wRL1zC-lqevQnjNJNn9W0gabsbKjuByUdXwkSspTO6SNYAt2ZhewhzwZ2M~Q5v~NVu-KLY91SM2Ovmm53ZnhnCMdGQe~9Ki6b6A__"
+    imageUrl: "/img3.jpg"
   },
   {
     title: "How 7 lines of code turned into $36B Empire",
@@ -70,7 +70,7 @@ const dummyData = [
     date: "20Sep2022",
     status: "Published",
     views: 428,
-    imageUrl: "https://s3-alpha-sig.figma.com/img/d146/1468/65a8273af2cbbc88616b1353aee1e51d?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QD7qig1FF7pP4DoZ86jfut-enRWkeqE14au-x1iW36f4FP~rHbPe84Tp4WzaF1MuG0~GUU6pQ4QOFJ4dXVwZMMi9imAPJKJ9p1teHrRrs6agfxAJxVvFp0sdWbyjh2V3QhOXswuVfGuXFSmDFmO10NP4PDBu2uEaUJp4aDPeVpmM5EAhsvzA8JJIlq9NYeNxr4wpBXmqwaxTksP51CSvvmyk3COvZCegsv9eGKOHfAD9H187FY3wRL1zC-lqevQnjNJNn9W0gabsbKjuByUdXwkSspTO6SNYAt2ZhewhzwZ2M~Q5v~NVu-KLY91SM2Ovmm53ZnhnCMdGQe~9Ki6b6A__"
+    imageUrl: "/img8.jpg"
   },
 ];
 
