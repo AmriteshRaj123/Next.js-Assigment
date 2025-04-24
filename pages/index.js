@@ -14,7 +14,7 @@ const dummyData = [
     date: "20Sep2022",
     status: "Published",
     views: 428,
-    imageUrl: "/img3.jpg"
+    imageUrl: "/img1.jpg"
   },
   {
     title: "How 7 lines of code turned into $36B Empire",
@@ -22,7 +22,7 @@ const dummyData = [
     date: "20Sep2022",
     status: "Published",
     views: 428,
-    imageUrl: "/img5.jpg"
+    imageUrl: "/img1.jpg"
   },
   {
     title: "How 7 lines of code turned into $36B Empire",
@@ -30,7 +30,7 @@ const dummyData = [
     date: "20Sep2022",
     status: "Published",
     views: 428,
-    imageUrl: "/img3.jpg"
+    imageUrl: "/img1.jpg"
   },
   {
     title: "How 7 lines of code turned into $36B Empire",
@@ -38,7 +38,7 @@ const dummyData = [
     date: "20Sep2022",
     status: "Published",
     views: 428,
-    imageUrl: "/img5.jpg"
+    imageUrl: "/img1.jpg"
   },
   {
     title: "How 7 lines of code turned into $36B Empire",
@@ -46,7 +46,7 @@ const dummyData = [
     date: "20Sep2022",
     status: "Published",
     views: 428,
-    imageUrl: "/img5.jpg"
+    imageUrl: "/img1.jpg"
   },
   {
     title: "How 7 lines of code turned into $36B Empire",
@@ -54,7 +54,7 @@ const dummyData = [
     date: "20Sep2022",
     status: "Published",
     views: 428,
-    imageUrl: "/img3.jpg"
+    imageUrl: "/img1.jpg"
   },
   {
     title: "How 7 lines of code turned into $36B Empire",
@@ -62,7 +62,7 @@ const dummyData = [
     date: "20Sep2022",
     status: "Published",
     views: 428,
-    imageUrl: "/img3.jpg"
+    imageUrl: "/img1.jpg"
   },
   {
     title: "How 7 lines of code turned into $36B Empire",
@@ -70,7 +70,7 @@ const dummyData = [
     date: "20Sep2022",
     status: "Published",
     views: 428,
-    imageUrl: "/img8.jpg"
+    imageUrl: "/img1.jpg"
   },
 ];
 
